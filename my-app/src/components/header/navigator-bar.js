@@ -3,17 +3,15 @@ import '../../style.css'
 
 class NavigatorBar extends Component {
   render() {
+    const items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
+    const navItems = items.map( (navItem) =>
+      <li className='menu-item' key={navItem.toString()}> { navItem } </li>
+    )
     return (
       <div>
         <div className='main-menu wrapper'>
           <ul className='menu-list'>
-            <li className='menu-item'> item1 </li>
-            <li className='menu-item'> item2 </li>
-            <li className='menu-item'> item3 </li>
-            <li className='menu-item'> item4 </li>
-            <li className='menu-item'> item5 </li>
-            <li className='menu-item'> item6 </li>
-            <li className='menu-item'> item7 </li>
+            { navItems }
           </ul>
         </div>
       </div>
