@@ -1,0 +1,115 @@
+.wrapper{
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+}
+.header-logo{
+  background-color: blue;
+}
+.navbar{
+  background-color: green;
+}
+
+.header-container{
+  width: 100%;
+  padding: 30px 0;
+}
+.main-logo{
+  width: 30%;
+  float: left;
+  color: white;
+}
+.header-ad{
+  width: 70%;
+  height: 100px;
+  float: left;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+.clear{
+  clear: both;
+}
+
+.menu-list{
+  margin: 0;
+  padding: 10px 0;
+  color: white;
+}
+.menu-item{
+  display: inline;
+  padding: 10px 20px;
+}
+
+.main-content{
+  background-color: #e9e9e9;
+}
+.content-box{
+  padding: 20px 0;
+}
+.content-detail{
+  width: 70%;
+  float: left;
+}
+.content-sidebar{
+  width: 28%;
+  float: left;
+  margin-left: 2%;
+  background-color: blue;
+}
+
+.card-item{
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+}
+.card-title{
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #4c6e9c;
+  padding: 10px 5px;
+}
+.card-container, .card-footer{
+  background-color: #ffffff;
+}
+.additional-detail{
+  width: 100%;
+  padding: 5px;
+}
+.author-section{
+  width: 50%;
+  display: inline-block;
+}
+.tag-list{
+  width: 50%;
+  display: inline-block;
+}
+.tag-item{
+  margin: 0 10px;
+}
+
+.card-content{
+  padding: 10px;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+}
+.card-thumb{
+  width: 30%;
+  height: 200px;
+  float: left;
+  background-color: #4c6e9c;
+}
+.card-detail{
+  width: 68%;
+  margin-left: 2%;
+  float: left;
+}
+.card-caution{
+  padding: 10px 0;
+}
+.caution-title{
+  font-weight: 600;
+}
+
+.readmore{
+  padding: 5px 20px;
+}
