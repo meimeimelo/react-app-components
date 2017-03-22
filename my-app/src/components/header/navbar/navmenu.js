@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import '../../style.css'
+import '../../../mainstyle.css';
+import '../headerstyle.css'
 
-class NavigatorBar extends Component {
+class NavMenuList extends Component {
   render() {
     const items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
     const navItems = items.map( (navItem) =>
@@ -9,14 +10,12 @@ class NavigatorBar extends Component {
     )
     return (
       <div>
-        <div className='main-menu wrapper'>
-          <ul className='menu-list'>
-            { navItems }
-          </ul>
-        </div>
+        <ul className='menu-list'>
+          { navItems }
+        </ul>
       </div>
     )
   }
 }
 
-export default NavigatorBar
+export default NavMenuList

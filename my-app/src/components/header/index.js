@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import '../../style.css'
-import HeaderContent from './header-content'
-import NavigatorBar from './navigator-bar'
+import '../../mainstyle.css'
+import './headerstyle.css'
+import HeaderContainer from './content/header-container'
+import NavigatorBar from './navbar/navigator-bar'
 
 class Header extends Component {
   render() {
     return (
       <div>
         <div className='header-logo'>
-          <HeaderContent />
+          <HeaderContainer />
         </div>
         <div className='navbar'>
           <NavigatorBar />

@@ -1,53 +1,41 @@
-.wrapper{
+/*mainstyle here*/
+.wrapper {
   max-width: 1400px;
   width: 80%;
   margin: 0 auto;
 }
-.header-logo{
-  background-color: blue;
-}
-.navbar{
-  background-color: green;
-}
-
-.header-container{
-  width: 100%;
-  padding: 30px 0;
-}
-.main-logo{
-  width: 30%;
-  float: left;
-  color: white;
-}
-.header-ad{
-  width: 70%;
-  height: 100px;
-  float: left;
-  text-align: center;
-  background-color: red;
-  color: white;
-}
-.clear{
+.clear {
   clear: both;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.table {
+  display: table;
+  width: 100%;
+}
+.row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
 
-.menu-list{
-  margin: 0;
-  padding: 10px 0;
-  color: white;
-}
-.menu-item{
-  display: inline;
-  padding: 10px 20px;
-}
+
 
 .main-content{
   background-color: #e9e9e9;
 }
-.content-box{
+.content-section{
   padding: 20px 0;
 }
-.content-detail{
+.card-section{
   width: 70%;
   float: left;
 }
@@ -77,11 +65,9 @@
 }
 .author-section{
   width: 50%;
-  display: inline-block;
 }
 .tag-list{
   width: 50%;
-  display: inline-block;
 }
 .tag-item{
   margin: 0 10px;

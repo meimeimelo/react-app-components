@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import '../../style.css'
+import '../../../../mainstyle.css'
+import '../../containerstyle.css'
 import CardTitle from './card-title'
 import CardInfo from './card-info'
 import CardFooter from './card-footer'

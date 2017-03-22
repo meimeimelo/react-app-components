@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import '../../style.css'
+import '../../../../mainstyle.css'
+import '../../containerstyle.css'
 
 class CardThumb extends Component {
   render() {
