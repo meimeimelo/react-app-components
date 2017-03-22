@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropsTypes } from 'react'
 import '../../mainstyle.css'
 import MainContent from './content/content'
 

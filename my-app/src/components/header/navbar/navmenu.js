@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import '../../../mainstyle.css';
 import '../headerstyle.css'
 
 class NavMenuList extends Component {
+  static proptypes = {
+    menuArray: PropTypes.array.isRequired
+  }
+  static defaultProps = {
+    menuArray: []
+  }
+
   render() {
-    const items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
-    const navItems = items.map( (navItem) =>
-      <li className='menu-item' key={navItem.toString()}> { navItem } </li>
+    const { menuArray } = this.props
+    const navItems = menuArray.map( (navItem, index) =>
+      <li className='menu-item' key={index}> { navItem.title } </li>
     )
+
     return (
       <div>
         <ul className='menu-list'>
