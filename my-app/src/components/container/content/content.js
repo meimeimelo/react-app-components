@@ -19,7 +19,7 @@ class MainContent extends Component {
         url: root + '/posts',
         method: 'GET'
       }).then((data) => {
-        console.log(data)
+        // console.log(data)
         this.setState({
           cardDataArray: data
         })

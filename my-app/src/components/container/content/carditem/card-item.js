@@ -7,11 +7,12 @@ import CardFooter from './card-footer'
 
 class CardItem extends Component {
   render() {
+    const { title, description } = this.props
     return (
       <div>
         <div className='card-item'>
-          <CardTitle />
-          <CardInfo />
+          <CardTitle title={this.props.title} />
+          <CardInfo cardinfo={this.props.description} />
           <CardFooter />
         </div>
       </div>

@@ -13,12 +13,10 @@ class CardSection extends Component {
   }
 
   render() {
-    console.log(this.props.dataListArray)
-
-
+    // console.log(this.props.dataListArray)
     const { dataListArray } = this.props
     const cardItems = dataListArray.map( (value, index) =>
-        <CardItem />
+        <CardItem key={value.id} title={value.title} description={value.body}/>
     )
     return (
       <div className='card-section'>

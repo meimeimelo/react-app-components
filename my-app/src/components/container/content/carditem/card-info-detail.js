@@ -6,12 +6,11 @@ import CardCaution from './card-caution'
 
 class CardDetail extends Component {
   render() {
+    const { description } = this.props
     return (
-      <div>
-        <div className='card-detail'>
-          <CardDesc />
-          <CardCaution />
-        </div>
+      <div className='card-detail'>
+        <CardDesc description={this.props.description}/>
+        <CardCaution />
       </div>
     )
   }

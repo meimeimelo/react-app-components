@@ -4,11 +4,10 @@ import '../../containerstyle.css'
 
 class CardTitle extends Component {
   render() {
+    const { title } = this.props
     return (
-      <div>
-        <div className='card-title'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
-        </div>
+      <div className='card-title'>
+        { title }
       </div>
     )
   }

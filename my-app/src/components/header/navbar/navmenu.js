@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import '../../../mainstyle.css';
 import '../headerstyle.css'
+import NavItem from './nav-item'
 
 class NavMenuList extends Component {
   static proptypes = {
@@ -12,14 +13,12 @@ class NavMenuList extends Component {
 
   render() {
     const { menuArray } = this.props
-    const navItems = menuArray.map( (navItem, index) =>
-      <li className='menu-item' key={index}> { navItem.title } </li>
-    )
-
     return (
       <div>
         <ul className='menu-list'>
-          { navItems }
+          { menuArray.map( (value, index) =>
+            <NavItem key={index} itemName={value.title}/>
+          )}
         </ul>
       </div>
     )

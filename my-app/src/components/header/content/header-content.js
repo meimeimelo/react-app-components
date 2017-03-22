@@ -11,6 +11,7 @@ class HeaderContent extends Component {
         <div className='header-container'>
           <HeaderMainLogo />
           <HeaderBannerAd />
+          <div className='clear'></div>
         </div>
       </div>
     )
