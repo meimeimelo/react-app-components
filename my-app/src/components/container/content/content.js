@@ -14,6 +14,10 @@ class MainContent extends Component {
   }
 
   componentDidMount() {
+    this.loadData()
+  }
+
+  loadData() {
     const root = 'https://jsonplaceholder.typicode.com'
     $.ajax({
       url: root + '/posts',
@@ -21,12 +25,14 @@ class MainContent extends Component {
       method: 'GET'
     }).then((data) => {
       console.log(data)
+      // const title = data.map((da) => da.title)
+      // console.log(title)
       this.setState({ cardDataArray: data })
     }).catch(console.log)
   }
 
-  componentWillMount() {
-
+  clearData() {
+    this.setState({ cardDataArray: [] })
   }
 
   render() {
@@ -34,7 +40,7 @@ class MainContent extends Component {
         <div>
           <div className='wrapper'>
             <div className='content-section'>
-              <CardSection dataListArray={this.state.cardDataArray} />
+              <CardSection dataListArray={this.state.cardDataArray} loadData={this.loadData.bind(this)} clearData={this.clearData.bind(this)} />
               <ContainerSideBar />
               <div className='clear'></div>
             </div>

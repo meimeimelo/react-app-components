@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import '../../../../../mainstyle.css'
 import '../../../containerstyle.css'
-import FetchButton from './fetch-btn'
-import ClearButton from './clear-btn'
+import Button from './fetch-btn'
 
 class ButtonSection extends Component {
   render() {
+    const { loadData, clearData } = this.props
     return(
       <div className='button-section'>
-        <FetchButton />
-        <ClearButton />
+        <Button btnName={'fetch'} action={ loadData }  />
+        <Button btnName={'clear'} action={ clearData } />
       </div>
     )
   }
