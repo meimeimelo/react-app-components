@@ -13,18 +13,23 @@ class MainContent extends Component {
     }
   }
 
-  render() {
-      var root = 'https://jsonplaceholder.typicode.com';
-      $.ajax({
-        url: root + '/posts',
-        method: 'GET'
-      }).then((data) => {
-        // console.log(data)
-        this.setState({
-          cardDataArray: data
-        })
-      }).catch(console.log)
+  componentDidMount() {
+    const root = 'https://jsonplaceholder.typicode.com'
+    $.ajax({
+      url: root + '/posts',
+      dataType: 'json',
+      method: 'GET'
+    }).then((data) => {
+      console.log(data)
+      this.setState({ cardDataArray: data })
+    }).catch(console.log)
+  }
 
+  componentWillMount() {
+
+  }
+
+  render() {
       return (
         <div>
           <div className='wrapper'>

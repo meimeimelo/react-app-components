@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import '../../../../mainstyle.css'
 import '../../containerstyle.css'
 import CardItem from './card-item'
+import ButtonSection from './fetchButton/button-section'
 
 class CardSection extends Component {
   static propTypes = {
@@ -20,6 +21,7 @@ class CardSection extends Component {
     )
     return (
       <div className='card-section'>
+        <ButtonSection />
         { cardItems }
       </div>
     )
