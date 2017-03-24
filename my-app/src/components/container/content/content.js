@@ -13,10 +13,6 @@ class MainContent extends Component {
     }
   }
 
-  componentDidMount() {
-    this.loadData()
-  }
-
   loadData() {
     const root = 'https://jsonplaceholder.typicode.com'
     $.ajax({
@@ -29,6 +25,10 @@ class MainContent extends Component {
       // console.log(title)
       this.setState({ cardDataArray: data })
     }).catch(console.log)
+  }
+
+  componentDidMount() {
+    this.loadData()
   }
 
   clearData() {

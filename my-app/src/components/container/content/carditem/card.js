@@ -14,14 +14,14 @@ class CardSection extends Component {
   }
 
   render() {
-    // console.log(this.props.dataListArray)
     const { dataListArray, loadData, clearData } = this.props
     const cardItems = dataListArray.map( (value, index) =>
         <CardItem key={value.id} title={value.title} description={value.body}/>
     )
+
     return (
       <div className='card-section'>
-        <ButtonSection loadData={loadData} clearData={clearData} />
+        <ButtonSection loadData={loadData} clearData={clearData}/>
         { cardItems }
       </div>
     )

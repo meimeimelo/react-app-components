@@ -8,8 +8,8 @@ class ButtonSection extends Component {
     const { loadData, clearData } = this.props
     return(
       <div className='button-section'>
-        <Button btnName={'fetch'} action={ loadData }  />
-        <Button btnName={'clear'} action={ clearData } />
+        <Button btnName={'Fetch'} action={ loadData }  />
+        <Button btnName={'Clear'} action={ clearData } />
       </div>
     )
   }
