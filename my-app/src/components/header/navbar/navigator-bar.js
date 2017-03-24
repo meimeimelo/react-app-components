@@ -6,29 +6,27 @@ import NavMenuList from './navmenu'
 class NavigatorBar extends Component {
   render() {
     const items = [
-      { title: 'item1',
+      { title: 'Home',
         href: 'xxx'
       },
-      { title: 'item2',
+      { title: 'News',
         href: 'xxx'
       },
-      { title: 'item3',
+      { title: 'Feed',
         href: 'xxx'
       },
-      { title: 'item4',
+      { title: 'Game',
         href: 'xxx'
       },
-      { title: 'item5',
+      { title: 'About',
         href: 'xxx'
       },
-      { title: 'item6',
+      { title: 'Contact',
         href: 'xxx'
       }]
     return (
-      <div>
-        <div className='main-menu wrapper'>
-          <NavMenuList menuArray={items} />
-        </div>
+      <div className='main-menu wrapper'>
+        <NavMenuList menuArray={items} />
       </div>
     )
   }

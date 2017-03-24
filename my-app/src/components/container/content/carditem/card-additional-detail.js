@@ -7,11 +7,9 @@ import CardTags from './card-tag'
 class AdditionalDetail extends Component{
   render() {
     return (
-      <div>
-        <div className='additional-detail table'>
-          <CardAuthor />
-          <CardTags />
-        </div>
+      <div className='additional-detail table'>
+        <CardAuthor />
+        <CardTags />
       </div>
     )
   }

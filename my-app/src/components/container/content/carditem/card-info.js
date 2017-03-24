@@ -6,11 +6,11 @@ import CardContentContainer from './card-info-container'
 
 class CardInfo extends Component {
   render() {
-    const { cardinfo } = this.props
+    const { description } = this.props
     return (
       <div className='card-container'>
         <AdditionalDetail />
-        <CardContentContainer description={this.props.cardinfo} />
+        <CardContentContainer description={this.props.description} />
       </div>
     )
   }

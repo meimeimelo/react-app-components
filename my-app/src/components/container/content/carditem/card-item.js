@@ -9,12 +9,10 @@ class CardItem extends Component {
   render() {
     const { title, description } = this.props
     return (
-      <div>
-        <div className='card-item'>
-          <CardTitle title={this.props.title} />
-          <CardInfo cardinfo={this.props.description} />
-          <CardFooter />
-        </div>
+      <div className='card-item'>
+        <CardTitle title={ this.props.title } />
+        <CardInfo description={ this.props.description } />
+        <CardFooter />
       </div>
     )
   }

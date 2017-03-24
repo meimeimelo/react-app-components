@@ -1,6 +1,6 @@
 /*headercontainer style*/
 .header-logo {
-  background-color: blue;
+  background-color: #4c6e9c;
 }
 
 .header-container {
@@ -17,7 +17,10 @@
   width: 70%;
   height: 100px;
   background-color: red;
-  color: white;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*navbar style*/

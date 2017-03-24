@@ -7,11 +7,11 @@ import NavigatorBar from './navbar/navigator-bar'
 class Header extends Component {
   render() {
     return (
-      <div>
-        <div className='header-logo'>
+      <div className="main-header">
+        <div className="header-logo">
           <HeaderContainer />
         </div>
-        <div className='navbar'>
+        <div className="navbar">
           <NavigatorBar />
         </div>
       </div>
