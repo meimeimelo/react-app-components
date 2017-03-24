@@ -6,7 +6,7 @@ class ContainerSideBar extends Component {
   render() {
     return (
       <div className="content-sidebar">
-        SIDEBAR
+        <p>SIDEBAR</p>
       </div>
     )
   }
