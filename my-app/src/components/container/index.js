@@ -5,7 +5,7 @@ import MainContent from './content/content'
 class Container extends Component {
   render() {
     return (
-      <div className='main-content'>
+      <div className="main-content">
         <MainContent />
       </div>
     )

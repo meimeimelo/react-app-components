@@ -37,11 +37,11 @@ class MainContent extends Component {
 
   render() {
       return (
-        <div className='wrapper'>
-          <div className='content-section'>
+        <div className="wrapper">
+          <div className="content-section">
             <CardSection dataListArray={this.state.cardDataArray} loadData={this.loadData.bind(this)} clearData={this.clearData.bind(this)} />
             <ContainerSideBar />
-            <div className='clear'></div>
+            <div className="clear"></div>
           </div>
         </div>
       )

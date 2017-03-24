@@ -6,7 +6,7 @@ class CardTitle extends Component {
   render() {
     const { title } = this.props
     return (
-      <div className='card-title'>
+      <div className="card-title">
         { title }
       </div>
     )

@@ -5,8 +5,8 @@ import '../../containerstyle.css'
 class CardAuthor extends Component {
   render() {
     return (
-      <div className='table-cell'>
-        <div className='author-section'>
+      <div className="table-cell">
+        <div className="author-section">
           post by: meimeimelo
         </div>
       </div>

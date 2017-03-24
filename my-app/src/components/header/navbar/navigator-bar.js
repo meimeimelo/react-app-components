@@ -25,7 +25,7 @@ class NavigatorBar extends Component {
         href: 'xxx'
       }]
     return (
-      <div className='main-menu wrapper'>
+      <div className="main-menu wrapper">
         <NavMenuList menuArray={items} />
       </div>
     )

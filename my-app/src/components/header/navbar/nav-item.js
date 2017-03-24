@@ -5,9 +5,9 @@ import '../headerstyle.css'
 class NavItem extends Component {
   render() {
     const  { itemName }  = this.props
-    
+
     return (
-      <li className='menu-item'>
+      <li className="menu-item">
         { itemName }
       </li>
     )

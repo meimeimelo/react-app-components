@@ -15,7 +15,7 @@ class NavMenuList extends Component {
     const { menuArray } = this.props
     return (
       <div>
-        <ul className='menu-list'>
+        <ul className="menu-list">
           { menuArray.map( (value, index) =>
             <NavItem key={index} itemName={value.title}/>
           )}

@@ -7,10 +7,10 @@ import HeaderBannerAd from './header-banner-ad'
 class HeaderContent extends Component {
   render() {
     return (
-      <div className='header-container'>
+      <div className="header-container">
         <HeaderMainLogo />
         <HeaderBannerAd />
-        <div className='clear'></div>
+        <div className="clear"></div>
       </div>
     )
   }

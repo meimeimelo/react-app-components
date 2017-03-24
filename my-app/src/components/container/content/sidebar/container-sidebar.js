@@ -5,7 +5,7 @@ import '../../containerstyle.css'
 class ContainerSideBar extends Component {
   render() {
     return (
-      <div className='content-sidebar'>
+      <div className="content-sidebar">
         SIDEBAR
       </div>
     )

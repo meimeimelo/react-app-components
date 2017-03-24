@@ -20,7 +20,7 @@ class CardSection extends Component {
     )
 
     return (
-      <div className='card-section'>
+      <div className="card-section">
         <ButtonSection loadData={loadData} clearData={clearData}/>
         { cardItems }
       </div>

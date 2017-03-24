@@ -6,7 +6,7 @@ import HeaderContent from './header-content'
 class HeaderContainer extends Component {
   render() {
     return (
-      <div className='main-header wrapper'>
+      <div className="main-header wrapper">
         <HeaderContent />
       </div>
     )

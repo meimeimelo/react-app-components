@@ -6,7 +6,7 @@ class CardDesc extends Component {
   render() {
     const { description } = this.props
     return (
-      <div className='card-desc'>
+      <div className="card-desc">
         { description }
       </div>
     )

@@ -8,7 +8,7 @@ class CardInfo extends Component {
   render() {
     const { description } = this.props
     return (
-      <div className='card-container'>
+      <div className="card-container">
         <AdditionalDetail />
         <CardContentContainer description={this.props.description} />
       </div>

@@ -6,7 +6,7 @@ class FetchButton extends Component {
   render(){
     const { btnName, action } = this.props
     return(
-        <button className='load-btn btn' onClick={action}>{btnName}</button>
+        <button className="load-btn btn" onClick={action}>{btnName}</button>
     )
   }
 }

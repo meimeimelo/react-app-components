@@ -5,8 +5,8 @@ import '../../containerstyle.css'
 class CardFooter extends Component {
   render() {
     return (
-      <div className='card-footer'>
-        <div className='readmore'>
+      <div className="card-footer">
+        <div className="readmore">
           Read more
         </div>
       </div>
